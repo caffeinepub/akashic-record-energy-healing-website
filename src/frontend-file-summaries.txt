@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring sage green, soft gold, and warm neutrals for a spiritual aesthetic, plus custom fonts (Cormorant Garamond serif and Montserrat sans-serif) and mystical design utilities.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom spiritual color palette, serif/sans font families, custom shadows with glow effects, and animations for fade-in and floating effects.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, ThemeProvider wrapper, and routes for Home, About, Services, and Contact pages with shared Navigation and Footer layout.",
+  "frontend/src/components/Navigation.tsx": "Responsive navigation header with logo, desktop/mobile menu, active route highlighting, and sticky positioning with backdrop blur effect.",
+  "frontend/src/components/Footer.tsx": "Footer component with three-column layout containing about text, quick links, contact info, and attribution with dynamic year and UTM-tracked caffeine.ai link.",
+  "frontend/src/components/Testimonials.tsx": "Testimonials section displaying three client reviews in a card grid with star ratings and hover effects.",
+  "frontend/src/pages/Home.tsx": "Homepage with hero section using generated background image, three-column introduction to services, testimonials component, and call-to-action section.",
+  "frontend/src/pages/About.tsx": "About page explaining Akashic Records concept, energy healing methodology, and practitioner background with certifications, using generated images for visual enhancement.",
+  "frontend/src/pages/Services.tsx": "Services page displaying three healing session types (Akashic Reading, Energy Healing, Combined) in cards with features, duration, and booking CTAs.",
+  "frontend/src/pages/Contact.tsx": "Contact page with form for booking sessions (name, email, phone, service selection, message), success state, and contact information sidebar.",
+  "frontend/src/hooks/useContactForm.ts": "Custom React Query mutation hook for submitting contact form data to backend with toast notifications for success/error states.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching contacts data from backend including getAllContacts, getContact by ID, and getContactsByService filters."
+}

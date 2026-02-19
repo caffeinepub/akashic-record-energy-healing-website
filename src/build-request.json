@@ -1,0 +1,171 @@
+{
+  "kind": "build_request",
+  "title": "Create website for Akashic Record practitioner and energy healer",
+  "projectName": "Akashic Healing",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a homepage with hero section introducing the Akashic Record practitioner and energy healer services, including a welcoming headline, brief description of offerings, and call-to-action button",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage displays a hero section with headline and description",
+        "Call-to-action button is prominently displayed",
+        "Content clearly introduces Akashic Records and energy healing services"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create an About page describing what Akashic Records are, the healing methodology, and the practitioner's background and qualifications",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About page explains Akashic Records concept clearly",
+        "Page includes practitioner biography and credentials",
+        "Healing approach and methodology are described"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a Services page listing available healing sessions, including Akashic Record readings, energy healing sessions, and any combined offerings with descriptions and duration information",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Services page lists all available session types",
+        "Each service includes description and duration",
+        "Page is organized and easy to navigate"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a booking or contact form where visitors can request appointments or ask questions, capturing name, email, phone number, preferred service, and message",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form collects name, email, phone, service type, and message",
+        "Form validates required fields",
+        "Form submissions are stored in backend",
+        "User receives confirmation after successful submission"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement backend storage for contact form submissions including timestamp, contact details, requested service, and message content",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores all form submission data",
+        "Submissions include timestamp and unique identifier",
+        "Data persists across canister upgrades"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a testimonials or reviews section displaying client feedback about healing sessions and Akashic Record readings",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Testimonials section displays client reviews",
+        "Each testimonial shows client name and feedback",
+        "Section is visually appealing and credible"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement responsive navigation menu with links to Home, About, Services, Testimonials, and Contact pages",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a website for akashic record practioner and energy healer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation menu is present on all pages",
+        "Menu is responsive and works on mobile devices",
+        "Active page is visually indicated in navigation"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Apply a cohesive visual design with a calming, spiritual aesthetic featuring earthy tones (sage green, soft gold, warm neutrals), elegant serif typography for headings, and ethereal design elements that evoke healing and mysticism throughout the entire site",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses earthy, calming tones consistently",
+        "Typography creates a spiritual, professional atmosphere",
+        "Design elements reflect healing and mystical themes",
+        "Visual style is consistent across all pages"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use single-actor Motoko architecture for backend",
+    "Do not modify immutable frontend paths (useInternetIdentity.ts, useInternetIdentity.tsx, useActor.ts, main.tsx, components/ui)",
+    "Use React with TypeScript, Tailwind CSS, and React Query for frontend"
+  ],
+  "nonGoals": [
+    "Payment processing or e-commerce functionality",
+    "User authentication or client portal",
+    "Real-time booking calendar integration",
+    "Blog or content management system",
+    "Email automation or notifications"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Ethereal hero background image with soft light rays and sacred geometry patterns suggesting spiritual energy (hero-bg.dim_1920x1080.png)",
+      "Akashic Records symbol or mystical book icon for services section (akashic-icon.dim_256x256.png)",
+      "Energy healing hands illustration with glowing aura effect (healing-hands.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}

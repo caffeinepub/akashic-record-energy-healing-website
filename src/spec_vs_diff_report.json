@@ -1,0 +1,59 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-19T23:32:17.639Z",
+  "summary": "The diff implements a complete Akashic healing website with all 8 requirements. The implementation includes a responsive frontend with Home, About, Services, and Contact pages using React/TypeScript/Tailwind, a Motoko backend for contact form storage, and a spiritual design aesthetic with custom fonts and color palette. However, the testimonials section is only present on the Home page rather than having a dedicated page, and the generated images are correctly referenced but not included in the diff files.",
+  "missing_requirements": [
+    {
+      "id": "REQ-7",
+      "requirement": "Navigation menu with links to Home, About, Services, Testimonials, and Contact pages",
+      "reason": "Navigation component includes links to Home, About, Services, and Contact, but there is no dedicated Testimonials page or route. The testimonials component is only embedded in the Home page.",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Backend query functions for retrieving individual contacts by ID and filtering contacts by service type",
+      "reason": "REQ-5 only requests storing contact form submissions. The BuildRequest does not specify any requirement for retrieving, querying, or filtering submitted contacts. The backend includes getContact, getAllContacts, and getContactsByService functions that were not requested.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    },
+    {
+      "description": "ThemeProvider with dark mode support",
+      "reason": "No requirement specifies theme switching or dark mode functionality. The implementation includes next-themes ThemeProvider and dark mode CSS variables.",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ]
+    }
+  ],
+  "confidence": 0.85,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/Testimonials.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useContactForm.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/About.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/Home.tsx",
+    "frontend/src/pages/Services.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

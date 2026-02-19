@@ -1,0 +1,161 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Akashic Healing Website Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create homepage with hero section introducing Akashic Record practitioner and energy healer services",
+      "acceptanceCriteria": [
+        "Homepage displays a hero section with headline and description",
+        "Call-to-action button is prominently displayed",
+        "Content clearly introduces Akashic Records and energy healing services"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "create",
+          "description": "Create homepage component with hero section featuring welcoming headline, service description, and call-to-action button. Use the generated hero background image at frontend/public/assets/generated/hero-bg.dim_1920x1080.png as the hero section background. Include brief introduction to Akashic Records and energy healing services."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire Home page component into the application router with route path '/' and add navigation link in the main navigation menu."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create About page describing Akashic Records, healing methodology, and practitioner background",
+      "acceptanceCriteria": [
+        "About page explains Akashic Records concept clearly",
+        "Page includes practitioner biography and credentials",
+        "Healing approach and methodology are described"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "create",
+          "description": "Create About page component with sections explaining what Akashic Records are, the healing methodology used, and the practitioner's background and qualifications. Include content that educates visitors about the spiritual practice."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add About page route with path '/about' to the application router and include navigation link in the main menu."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create Services page listing healing sessions with descriptions and duration",
+      "acceptanceCriteria": [
+        "Services page lists all available session types",
+        "Each service includes description and duration",
+        "Page is organized and easy to navigate"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Services.tsx",
+          "operation": "create",
+          "description": "Create Services page component displaying available healing sessions including Akashic Record readings, energy healing sessions, and combined offerings. Each service should show description and duration information. Use the generated Akashic icon at frontend/public/assets/generated/akashic-icon.dim_256x256.png and healing hands illustration at frontend/public/assets/generated/healing-hands.dim_512x512.png to visually represent the services."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add Services page route with path '/services' to the application router and include navigation link in the main menu."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create booking or contact form for appointment requests and inquiries",
+      "acceptanceCriteria": [
+        "Contact form collects name, email, phone, service type, and message",
+        "Form validates required fields",
+        "Form submissions are stored in backend",
+        "User receives confirmation after successful submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact page component with form capturing name, email, phone number, preferred service (dropdown), and message. Implement field validation for required inputs. On successful submission, call the backend submitContactForm method and display confirmation message to user."
+        },
+        {
+          "path": "frontend/src/hooks/useContactForm.ts",
+          "operation": "create",
+          "description": "Create custom hook for contact form submission logic using React Query. Hook should handle form state, validation, backend API call to submitContactForm, loading states, and success/error handling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add Contact page route with path '/contact' to the application router and include navigation link in the main menu."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create testimonials section displaying client feedback",
+      "acceptanceCriteria": [
+        "Testimonials section displays client reviews",
+        "Each testimonial shows client name and feedback",
+        "Section is visually appealing and credible"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Testimonials.tsx",
+          "operation": "create",
+          "description": "Create Testimonials component displaying client reviews about healing sessions and Akashic Record readings. Each testimonial should show client name and their feedback. Design should be visually appealing and convey credibility."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Import and include the Testimonials component in the homepage layout below the hero section to showcase client feedback."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Implement responsive navigation menu with links to all pages",
+      "acceptanceCriteria": [
+        "Navigation menu is present on all pages",
+        "Menu is responsive and works on mobile devices",
+        "Active page is visually indicated in navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create responsive navigation component with links to Home, About, Services, Testimonials (anchor link to homepage section), and Contact pages. Implement mobile-responsive menu with hamburger icon. Add active state styling to indicate current page."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and include Navigation component in the main application layout so it appears consistently across all pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Apply cohesive spiritual aesthetic with calming design throughout site",
+      "acceptanceCriteria": [
+        "Color palette uses earthy, calming tones consistently",
+        "Typography creates a spiritual, professional atmosphere",
+        "Design elements reflect healing and mystical themes",
+        "Visual style is consistent across all pages"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global CSS variables for the calming, spiritual color palette including sage green, soft gold, and warm neutrals. Add elegant serif font imports for headings and configure base typography styles that evoke a healing and mystical atmosphere."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with custom color palette (sage green, soft gold, warm neutrals), custom serif font family for headings, and design tokens that support the ethereal, spiritual aesthetic. Add custom utilities for mystical design elements like subtle shadows and glows."
+        }
+      ]
+    }
+  ]
+}

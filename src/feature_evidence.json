@@ -1,0 +1,139 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-homepage-with-hero-section-introducing-the-akashic-record-practitioner-and-energy-healer-services-including-a-welcoming-headline-brief-description-of-offerings-and-call-to-action-button",
+      "featureTitle": "Create a homepage with hero section introducing the Akashic Record practitioner and energy healer services, including a welcoming headline, brief description of offerings, and call-to-action button",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-about-page-describing-what-akashic-records-are-the-healing-methodology-and-the-practitioner-s-background-and-qualifications",
+      "featureTitle": "Create an About page describing what Akashic Records are, the healing methodology, and the practitioner's background and qualifications",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/About.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-services-page-listing-available-healing-sessions-including-akashic-record-readings-energy-healing-sessions-and-any-combined-offerings-with-descriptions-and-duration-information",
+      "featureTitle": "Create a Services page listing available healing sessions, including Akashic Record readings, energy healing sessions, and any combined offerings with descriptions and duration information",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Services.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-booking-or-contact-form-where-visitors-can-request-appointments-or-ask-questions-capturing-name-email-phone-number-preferred-service-and-message",
+      "featureTitle": "Create a booking or contact form where visitors can request appointments or ask questions, capturing name, email, phone number, preferred service, and message",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/hooks/useContactForm.ts",
+        "frontend/src/pages/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-testimonials-or-reviews-section-displaying-client-feedback-about-healing-sessions-and-akashic-record-readings",
+      "featureTitle": "Create a testimonials or reviews section displaying client feedback about healing sessions and Akashic Record readings",
+      "files": [
+        "frontend/src/components/Testimonials.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-responsive-navigation-menu-with-links-to-home-about-services-testimonials-and-contact-pages",
+      "featureTitle": "Implement responsive navigation menu with links to Home, About, Services, Testimonials, and Contact pages",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-cohesive-visual-design-with-a-calming-spiritual-aesthetic-featuring-earthy-tones-sage-green-soft-gold-warm-neutrals-elegant-serif-typography-for-headings-and-ethereal-design-elements-that-evoke-healing-and-mysticism-throughout-the-entire-site",
+      "featureTitle": "Apply a cohesive visual design with a calming, spiritual aesthetic featuring earthy tones (sage green, soft gold, warm neutrals), elegant serif typography for headings, and ethereal design elements that evoke healing and mysticism throughout the entire site",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

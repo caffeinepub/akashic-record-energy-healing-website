@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko actor implementing contact form storage with functions to submit, retrieve, and filter contacts by service type, storing data in a Map with auto-incrementing IDs and timestamps.",
+  "feature_evidence.json": "Feature evidence report documenting implemented features including homepage hero, about page, services page, contact form, testimonials, and responsive navigation with associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend files describing styling, routing, components, pages, and hooks for the Akashic healing website.",
+  "frontend/index.css": "Tailwind CSS configuration with custom OKLCH color variables for light and dark themes, defining spiritual aesthetic colors for backgrounds, borders, and UI elements.",
+  "frontend/index.html": "HTML entry point with root div and module script reference to main.tsx for the Akashic Record & Energy Healing Website.",
+  "frontend/src/App.tsx": "Main app component configuring TanStack Router with routes for Home, About, Services, and Contact pages, wrapped in ThemeProvider with shared Navigation/Footer layout and toast notifications.",
+  "frontend/src/components/Footer.tsx": "Footer component with three-column layout displaying about text, quick navigation links, contact CTA, copyright notice, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation header with logo, responsive desktop/mobile menu, active route highlighting, and Book Session CTA button.",
+  "frontend/src/components/Testimonials.tsx": "Testimonials section displaying three client reviews in a card grid with 5-star ratings and hover effects.",
+  "frontend/src/hooks/useActor.ts": "React Query hook managing ICP backend actor creation with Internet Identity authentication, returning anonymous or authenticated actor based on identity state.",
+  "frontend/src/hooks/useContactForm.ts": "Custom React hook that manages contact form submission using TanStack Query mutation, calling the backend actor's submitContactForm method and displaying toast notifications on success or error.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides React context and hooks for Internet Identity authentication on ICP, managing login state, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Defines TanStack Query hooks for fetching contact data from the backend actor, including queries for all contacts, individual contacts by ID, and contacts filtered by service type.",
+  "frontend/src/index.css": "Global CSS file defining Tailwind configuration, custom CSS variables for light/dark theme colors (sage green, warm neutrals, gold accents), typography using Cormorant Garamond and Montserrat fonts, and utility classes for glowing effects.",
+  "frontend/src/main.tsx": "Application entry point that renders the root React component wrapped with QueryClientProvider for TanStack Query and InternetIdentityProvider for ICP authentication.",
+  "frontend/src/pages/About.tsx": "About page component explaining Akashic Records and energy healing methodology with sections for what Akashic Records are, healing approach, and practitioner background using cards and icons.",
+  "frontend/src/pages/Contact.tsx": "Contact page component with a form for booking sessions, collecting name, email, phone, preferred service, and message, showing success state after submission and contact information sidebar.",
+  "frontend/src/pages/Home.tsx": "Homepage component featuring a hero section with background image, introduction cards for Akashic Records/Energy Healing/Soul Guidance services, and a testimonials section.",
+  "frontend/src/pages/Services.tsx": "Services page component displaying three healing service offerings (Akashic Record Reading, Energy Healing Session, Combined Reading & Healing) with icons, durations, descriptions, features lists, and booking call-to-action buttons.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom theme with OKLCH color system, custom fonts (Cormorant Garamond serif, Montserrat sans), extended animations (accordion, fade-in, float), glow shadows, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state tracking file documenting completed features (homepage, about, services, booking form, testimonials, navigation, spiritual design aesthetic) and pending feature requests for backend storage implementation."
+}
